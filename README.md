@@ -12,5 +12,5 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 ```
 
 ```shell
-protoc --proto_path=protos/ --dart_out=grpc:dart/ protos/**/*.proto  
+protoc --proto_path=. --dart_out=grpc:dart/ protos/**/*.proto  
 ```
