@@ -13,16 +13,16 @@ import 'dart:convert' as $convert;
 import 'dart:core' as $core;
 import 'dart:typed_data' as $typed_data;
 
-@$core.Deprecated('Use pointDescriptor instead')
-const Point$json = {
-  '1': 'Point',
+@$core.Deprecated('Use ePointDescriptor instead')
+const EPoint$json = {
+  '1': 'EPoint',
   '2': [
     {'1': 'x', '3': 1, '4': 2, '5': 2, '10': 'x'},
     {'1': 'y', '3': 2, '4': 2, '5': 2, '10': 'y'},
   ],
 };
 
-/// Descriptor for `Point`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List pointDescriptor = $convert.base64Decode(
-    'CgVQb2ludBIMCgF4GAEgAigCUgF4EgwKAXkYAiACKAJSAXk=');
+/// Descriptor for `EPoint`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List ePointDescriptor = $convert.base64Decode(
+    'CgZFUG9pbnQSDAoBeBgBIAIoAlIBeBIMCgF5GAIgAigCUgF5');
 

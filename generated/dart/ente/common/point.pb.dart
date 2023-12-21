@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-class Point extends $pb.GeneratedMessage {
-  factory Point({
+class EPoint extends $pb.GeneratedMessage {
+  factory EPoint({
     $core.double? x,
     $core.double? y,
   }) {
@@ -27,11 +27,11 @@ class Point extends $pb.GeneratedMessage {
     }
     return $result;
   }
-  Point._() : super();
-  factory Point.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Point.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  EPoint._() : super();
+  factory EPoint.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory EPoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Point', createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EPoint', createEmptyInstance: create)
     ..a<$core.double>(1, _omitFieldNames ? '' : 'x', $pb.PbFieldType.QF)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'y', $pb.PbFieldType.QF)
   ;
@@ -40,22 +40,22 @@ class Point extends $pb.GeneratedMessage {
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  Point clone() => Point()..mergeFromMessage(this);
+  EPoint clone() => EPoint()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  Point copyWith(void Function(Point) updates) => super.copyWith((message) => updates(message as Point)) as Point;
+  EPoint copyWith(void Function(EPoint) updates) => super.copyWith((message) => updates(message as EPoint)) as EPoint;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static Point create() => Point._();
-  Point createEmptyInstance() => create();
-  static $pb.PbList<Point> createRepeated() => $pb.PbList<Point>();
+  static EPoint create() => EPoint._();
+  EPoint createEmptyInstance() => create();
+  static $pb.PbList<EPoint> createRepeated() => $pb.PbList<EPoint>();
   @$core.pragma('dart2js:noInline')
-  static Point getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Point>(create);
-  static Point? _defaultInstance;
+  static EPoint getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EPoint>(create);
+  static EPoint? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.double get x => $_getN(0);

@@ -18,12 +18,12 @@ const Detection$json = {
   '1': 'Detection',
   '2': [
     {'1': 'box', '3': 1, '4': 2, '5': 11, '6': '.CenterBox', '10': 'box'},
-    {'1': 'landmarks', '3': 2, '4': 3, '5': 11, '6': '.Point', '10': 'landmarks'},
+    {'1': 'landmarks', '3': 2, '4': 3, '5': 11, '6': '.EPoint', '10': 'landmarks'},
   ],
 };
 
 /// Descriptor for `Detection`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List detectionDescriptor = $convert.base64Decode(
-    'CglEZXRlY3Rpb24SHAoDYm94GAEgAigLMgouQ2VudGVyQm94UgNib3gSJAoJbGFuZG1hcmtzGA'
-    'IgAygLMgYuUG9pbnRSCWxhbmRtYXJrcw==');
+    'CglEZXRlY3Rpb24SHAoDYm94GAEgAigLMgouQ2VudGVyQm94UgNib3gSJQoJbGFuZG1hcmtzGA'
+    'IgAygLMgcuRVBvaW50UglsYW5kbWFya3M=');
 

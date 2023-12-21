@@ -13,15 +13,15 @@ import 'dart:convert' as $convert;
 import 'dart:core' as $core;
 import 'dart:typed_data' as $typed_data;
 
-@$core.Deprecated('Use vectorDescriptor instead')
-const Vector$json = {
-  '1': 'Vector',
+@$core.Deprecated('Use eVectorDescriptor instead')
+const EVector$json = {
+  '1': 'EVector',
   '2': [
     {'1': 'values', '3': 1, '4': 3, '5': 1, '10': 'values'},
   ],
 };
 
-/// Descriptor for `Vector`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List vectorDescriptor = $convert.base64Decode(
-    'CgZWZWN0b3ISFgoGdmFsdWVzGAEgAygBUgZ2YWx1ZXM=');
+/// Descriptor for `EVector`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eVectorDescriptor = $convert.base64Decode(
+    'CgdFVmVjdG9yEhYKBnZhbHVlcxgBIAMoAVIGdmFsdWVz');
 

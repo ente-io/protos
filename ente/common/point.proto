@@ -1,5 +1,5 @@
 
-message Point {
+message EPoint {
   required float x = 1;
   required float y = 2;
 }

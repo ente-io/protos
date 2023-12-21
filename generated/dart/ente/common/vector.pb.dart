@@ -15,8 +15,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Vector is generic message for dealing with lists of doubles
 /// It should ideally be used independently and not as a submessage
-class Vector extends $pb.GeneratedMessage {
-  factory Vector({
+class EVector extends $pb.GeneratedMessage {
+  factory EVector({
     $core.Iterable<$core.double>? values,
   }) {
     final $result = create();
@@ -25,11 +25,11 @@ class Vector extends $pb.GeneratedMessage {
     }
     return $result;
   }
-  Vector._() : super();
-  factory Vector.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Vector.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  EVector._() : super();
+  factory EVector.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory EVector.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Vector', createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EVector', createEmptyInstance: create)
     ..p<$core.double>(1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PD)
     ..hasRequiredFields = false
   ;
@@ -38,22 +38,22 @@ class Vector extends $pb.GeneratedMessage {
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
   'Will be removed in next major version')
-  Vector clone() => Vector()..mergeFromMessage(this);
+  EVector clone() => EVector()..mergeFromMessage(this);
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
   'Will be removed in next major version')
-  Vector copyWith(void Function(Vector) updates) => super.copyWith((message) => updates(message as Vector)) as Vector;
+  EVector copyWith(void Function(EVector) updates) => super.copyWith((message) => updates(message as EVector)) as EVector;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static Vector create() => Vector._();
-  Vector createEmptyInstance() => create();
-  static $pb.PbList<Vector> createRepeated() => $pb.PbList<Vector>();
+  static EVector create() => EVector._();
+  EVector createEmptyInstance() => create();
+  static $pb.PbList<EVector> createRepeated() => $pb.PbList<EVector>();
   @$core.pragma('dart2js:noInline')
-  static Vector getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Vector>(create);
-  static Vector? _defaultInstance;
+  static EVector getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EVector>(create);
+  static EVector? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.List<$core.double> get values => $_getList(0);

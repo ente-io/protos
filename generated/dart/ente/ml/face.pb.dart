@@ -19,7 +19,7 @@ import '../common/point.pb.dart' as $1;
 class Detection extends $pb.GeneratedMessage {
   factory Detection({
     $0.CenterBox? box,
-    $core.Iterable<$1.Point>? landmarks,
+    $core.Iterable<$1.EPoint>? landmarks,
   }) {
     final $result = create();
     if (box != null) {
@@ -36,7 +36,7 @@ class Detection extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Detection', createEmptyInstance: create)
     ..aQM<$0.CenterBox>(1, _omitFieldNames ? '' : 'box', subBuilder: $0.CenterBox.create)
-    ..pc<$1.Point>(2, _omitFieldNames ? '' : 'landmarks', $pb.PbFieldType.PM, subBuilder: $1.Point.create)
+    ..pc<$1.EPoint>(2, _omitFieldNames ? '' : 'landmarks', $pb.PbFieldType.PM, subBuilder: $1.EPoint.create)
   ;
 
   @$core.Deprecated(
@@ -72,7 +72,7 @@ class Detection extends $pb.GeneratedMessage {
   $0.CenterBox ensureBox() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $core.List<$1.Point> get landmarks => $_getList(1);
+  $core.List<$1.EPoint> get landmarks => $_getList(1);
 }
 
 

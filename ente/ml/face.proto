@@ -4,5 +4,5 @@ import "ente/common/point.proto";
 
 message Detection {
     required CenterBox box = 1;
-    repeated Point landmarks = 2;
+    repeated EPoint landmarks = 2;
 }
