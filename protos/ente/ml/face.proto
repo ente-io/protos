@@ -1,0 +1,8 @@
+import "ente/common/box.proto";
+import "ente/common/point.proto";
+
+
+message Detection {
+    required CenterBox box = 1;
+    repeated Point landmarks = 2;
+}
