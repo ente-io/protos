@@ -1,0 +1,6 @@
+
+// Vector is generic message for dealing with lists of doubles
+// It should ideally be used independently and not as a submessage
+message Vector {
+    repeated double values = 1;
+}

@@ -1,0 +1,7 @@
+// CenterBox is a box where x,y is the center of the box
+message CenterBox {
+    required float x = 1;
+    required float y = 2;
+    required float height = 3;
+    required float width = 4;
+}
