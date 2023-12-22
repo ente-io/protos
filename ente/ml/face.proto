@@ -1,8 +1,18 @@
+syntax = "proto3";
+
+package ente.ml;
+
 import "ente/common/box.proto";
 import "ente/common/point.proto";
 
-
 message Detection {
-    required CenterBox box = 1;
-    repeated EPoint landmarks = 2;
+    optional  ente.common.CenterBox box = 1;
+    optional  ente.common.EPoint landmarks = 2;
 }
+
+message Face {
+    optional string id = 1;
+    optional Detection detection = 2;
+    optional float confidence = 3;
+}
+

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package ente.ml;
+import "ente/ml/face.proto";
+
+
+
+message FileML {
+    optional int64 id = 1;
+    repeated double clip = 2;
+}
+
+message FileFaces {
+    repeated Face faces = 1;
+    optional int32 height = 2;
+    optional int32 width = 3;
+    optional int32 version= 4;
+    optional string error = 5;
+}

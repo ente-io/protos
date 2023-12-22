@@ -1,4 +1,6 @@
+syntax = "proto3";
 
+package ente.common;
 // Vector is generic message for dealing with lists of doubles
 // It should ideally be used independently and not as a submessage
 message EVector {

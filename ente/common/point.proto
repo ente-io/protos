@@ -1,5 +1,8 @@
+syntax = "proto3";
 
+package ente.common;
+// EPoint is a point in 2D space
 message EPoint {
-  required float x = 1;
-  required float y = 2;
+  optional float x = 1;
+  optional float y = 2;
 }
